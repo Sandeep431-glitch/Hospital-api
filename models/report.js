@@ -4,7 +4,7 @@ const reportSchema = new mongooose.Schema({
   status: {
     type: String,
     required: true,
-    enum: ['Negative', 'Postive', 'Quarantine']
+    enum: ['Negative', 'Travelled-Quarantine', 'Symptoms-Quarantine', 'Positive-Admit']
   },
   doctor: {
     type: mongooose.Schema.Types.ObjectId,
